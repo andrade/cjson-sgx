@@ -1,6 +1,6 @@
 # cJSON
 
-Ultralightweight JSON parser in ANSI C.
+Ultralightweight SGX-compatible JSON parser in C.
 
 ## Table of contents
 * [License](#license)
@@ -84,7 +84,7 @@ There are several ways to incorporate cJSON into your project.
 
 Because the entire library is only one C file and one header file, you can just copy `cJSON.h` and `cJSON.c` to your projects source and start using it.
 
-cJSON is written in ANSI C (C89) in order to support as many platforms and compilers as possible.
+cJSON is written in C99 in order to support as many platforms and compilers as possible.
 
 #### CMake
 
@@ -532,9 +532,9 @@ cJSON only supports UTF-8 encoded input. In most cases it doesn't reject invalid
 
 #### C Standard
 
-cJSON is written in ANSI C (or C89, C90). If your compiler or C library doesn't follow this standard, correct behavior is not guaranteed.
+cJSON is written in C99. If your compiler or C library doesn't follow this standard, correct behavior is not guaranteed.
 
-NOTE: ANSI C is not C++ therefore it shouldn't be compiled with a C++ compiler. You can compile it with a C compiler and link it with your C++ code however. Although compiling with a C++ compiler might work, correct behavior is not guaranteed.
+NOTE: C is not C++ therefore it shouldn't be compiled with a C++ compiler. You can compile it with a C compiler and link it with your C++ code however. Although compiling with a C++ compiler might work, correct behavior is not guaranteed.
 
 #### Floating Point Numbers
 

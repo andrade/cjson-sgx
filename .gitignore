@@ -6,6 +6,7 @@ test
 *.swp
 *.patch
 tags
+.tags
 *.dylib
 build/
 cJSON_test
