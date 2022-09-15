@@ -23,7 +23,7 @@ script:
   - make -s UNITY_INCLUDE_DOUBLE= # without double
   - cd ../extras/fixture/test && rake ci
   - make -s default noStdlibMalloc
-  - make -s C89
+  - make -s C99
   - cd ../../../examples/example_1 && make -s ci
   - cd ../example_2 && make -s ci
   - cd ../example_3 && rake

@@ -19,6 +19,7 @@ Contributors:
 * [Christian Schulze](https://github.com/ChristianSch)
 * [Casperinous](https://github.com/Casperinous)
 * [ChenYuan](https://github.com/zjuchenyuan)
+* [Daniel Andrade](https://github.com/andrade) – Compatibility with Intel SGX
 * [Debora Grosse](https://github.com/DeboraG)
 * [dieyushi](https://github.com/dieyushi)
 * [Dōngwén Huáng (黄东文)](https://github.com/DongwenHuang)
