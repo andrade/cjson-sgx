@@ -1,6 +1,12 @@
+# cJSON-SGX
+
+Ultralightweight SGX-compatible JSON parser in C99 forked from [here](https://github.com/DaveGamble/cJSON).
+
+The original README follows.
+
 # cJSON
 
-Ultralightweight SGX-compatible JSON parser in C.
+Ultralightweight JSON parser in ANSI C.
 
 ## Table of contents
 * [License](#license)
@@ -84,7 +90,7 @@ There are several ways to incorporate cJSON into your project.
 
 Because the entire library is only one C file and one header file, you can just copy `cJSON.h` and `cJSON.c` to your projects source and start using it.
 
-cJSON is written in C99 in order to support as many platforms and compilers as possible.
+cJSON is written in ANSI C (C89) in order to support as many platforms and compilers as possible.
 
 #### CMake
 
@@ -211,8 +217,8 @@ Additionally there are the following two flags:
 
 For every value type there is a `cJSON_Create...` function that can be used to create an item of that type.
 All of these will allocate a `cJSON` struct that can later be deleted with `cJSON_Delete`.
-Note that you have to delete them at some point, otherwise you will get a memory leak.  
-**Important**: If you have added an item to an array or an object already, you **mustn't** delete it with `cJSON_Delete`. Adding it to an array or object transfers its ownership so that when that array or object is deleted, 
+Note that you have to delete them at some point, otherwise you will get a memory leak.
+**Important**: If you have added an item to an array or an object already, you **mustn't** delete it with `cJSON_Delete`. Adding it to an array or object transfers its ownership so that when that array or object is deleted,
 it gets deleted as well. You also could use `cJSON_SetValuestring` to change a `cJSON_String`'s `valuestring`, and you needn't to free the previous `valuestring` manually.
 
 #### Basic types
@@ -533,9 +539,9 @@ cJSON only supports UTF-8 encoded input. In most cases it doesn't reject invalid
 
 #### C Standard
 
-cJSON is written in C99. If your compiler or C library doesn't follow this standard, correct behavior is not guaranteed.
+cJSON is written in ANSI C (or C89, C90). If your compiler or C library doesn't follow this standard, correct behavior is not guaranteed.
 
-NOTE: C is not C++ therefore it shouldn't be compiled with a C++ compiler. You can compile it with a C compiler and link it with your C++ code however. Although compiling with a C++ compiler might work, correct behavior is not guaranteed.
+NOTE: ANSI C is not C++ therefore it shouldn't be compiled with a C++ compiler. You can compile it with a C compiler and link it with your C++ code however. Although compiling with a C++ compiler might work, correct behavior is not guaranteed.
 
 #### Floating Point Numbers
 
